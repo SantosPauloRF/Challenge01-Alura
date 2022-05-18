@@ -1,0 +1,472 @@
+body {
+    background-color: lightgray;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/* INICIO - LADO ESQUERDO */
+.esquerdo{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+    width: 75%;
+    height: 95vh;
+}
+
+.logo{
+    height: 10%;
+    padding-top: 10px;
+    padding-left: 40px;
+    display: block;
+}
+
+.digitar{
+    height: 65%;
+    padding-top: 80px;
+    padding-left: 120px;
+    padding-right: 0;
+}
+
+#text-area-esquerdo{
+    color: #0A3871;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    border: none;
+    resize: none;
+    background-color: lightgray;
+    width: 98%;
+    height: 98%;
+}
+
+#text-area-esquerdo::placeholder{
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+}
+
+.bloco-botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 15%;
+    padding-left: 240px;
+    text-align: left;
+}
+
+.texto-acima-botoes{
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.botoes{
+    display: flex;
+    height: 65%;
+}
+
+.btcriptografar{
+    color: #FFFFFF;
+    font-size: 16px;
+    width: 200px;
+    height: 33px;
+    margin-right: 24px;
+    text-align: center;
+    padding-top: 17px;
+    background-color: #0A3871;
+    border-radius: 24px;
+}
+
+.btdescriptografar{
+    color: #0A3871;;
+    font-size: 16px;
+    width: 200px;
+    height: 33px;
+    margin-right: 24px;
+    text-align: center;
+    padding-top: 17px;
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;;
+    border-radius: 24px;
+}
+
+/* INICIO - LADO DIREITO */
+.direito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 20%;
+    height: 95vh;
+    border-radius: 10px;
+    box-shadow: 0 24px 32px -8px black;
+    text-align: center;       
+}
+
+.imagem{
+    padding: 10px;
+}
+
+.imagemSumiu{
+    display: none;
+}
+
+.p {
+    padding: 12px;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.pSumiu{
+    display: none;
+}
+
+.text-area-direto{
+    padding: 10px;
+    resize: none;
+    border: none;
+    text-align: center;
+    height: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.text-area-direto2{
+    padding: 10px;
+    resize: none;
+    border: none;
+    text-align: center;
+    height: 90vh;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+}
+.botaoCopiar{
+    display: flex;
+    justify-content: center;
+    margin:10px;
+}
+
+.copiar{
+    display: none;
+}
+
+.copiar2{
+    color: #FFFFFF;
+    padding-top: 17px;
+    font-size: 16px;
+    width: 200px;
+    height: 33px;
+    text-align: center;
+    background-color: #0A3871;
+    border-radius: 24px;
+}
+
+/* ADAPTAÇÃO para tablet */
+
+
+@media screen and (max-width: 770px) {
+
+    main{
+        display: block;
+        justify-content: left;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .esquerdo{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 0;
+        width: 100%;
+        height: 85%;
+    }
+
+    .digitar{
+        padding-top: 80px;
+        padding-left: 40px;
+        padding-right: 0;
+    }
+
+    .texto-acima-botoes{
+        font-size: 12px;
+        font-weight: 400;
+        margin-left: 24px;
+        font-style: normal;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .bloco-botoes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        padding-left: 0px;
+        text-align: left;
+    }
+
+    .botoes{
+        display: flex;
+        justify-content:space-evenly;
+    }
+
+    .btcriptografar{
+        color: #FFFFFF;
+        font-size: 16px;
+        width: 50%;
+        margin-right: 24px;
+        margin-left: 24px;
+        text-align: center;
+        background-color: #0A3871;
+        border-radius: 24px;
+    }
+    
+    .btdescriptografar{
+        color: #0A3871;;
+        font-size: 16px;
+        width: 50%;
+        margin-right: 24px;
+        text-align: center;
+        background-color: #D8DFE8;
+        border: 1px solid #0A3871;;
+        border-radius: 24px;
+    }
+
+    #text-area-esquerdo{
+        color: #0A3871;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        border: none;
+        resize: none;
+        background-color: lightgray;
+        width: 98%;
+        height: 50%;
+    }
+
+    #text-area-esquerdo::placeholder{
+        font-family: 'Inter', sans-serif;
+        color: #0A3871;
+    }
+
+    .direito{
+        display: flex;
+        flex-direction: column;
+        justify-content:initial;
+        background-color: white;
+        margin-left: 5px;
+        width: 98%;
+        height: 343px;
+        border-radius: 10px;
+        box-shadow: 0 24px 32px -8px black;
+        text-align: center;       
+    }
+
+    .p {
+        padding: 5px;
+        font-style: normal;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 120%;
+    }
+
+    .imagem{
+        display: none;
+    }
+
+    .copiar2{
+        color: #FFFFFF;
+        padding-top: 17px;
+        font-size: 16px;
+        width: 100%;
+        height: 33px;
+        text-align: center;
+        background-color: #0A3871;
+        border-radius: 10px;
+    }
+
+    .text-area-direto2{
+        padding: 10px;
+        resize: none;
+        border: none;
+        text-align: center;
+        height: 90vh;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+    }
+
+    .botaoCopiar{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+}
+
+/*ADAPTAÇÃO para celular*/
+
+
+@media screen and (max-width: 376px) {
+
+    main{
+        display: block;
+        justify-content: left;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .esquerdo{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 0;
+        width: 100%;
+        height: 70%;
+    }
+
+    .digitar{
+        padding-top: 70px;
+        padding-left: 20px;
+        padding-right: 0;
+    }
+
+    .texto-acima-botoes{
+        font-size: 12px;
+        font-weight: 400;
+        margin-left: 5px;
+        font-style: normal;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .bloco-botoes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        padding-left: 0px;
+        text-align: left;
+    }
+
+    .botoes{
+        display: block;
+        justify-content:space-evenly;
+    }
+
+    .btcriptografar{
+        color: #FFFFFF;
+        font-size: 16px;
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        background-color: #0A3871;
+        border-radius: 24px;
+    }
+    
+    .btdescriptografar{
+        color: #0A3871;;
+        font-size: 16px;
+        width: 100%;
+        margin: 5px;
+        text-align: center;
+        background-color: #D8DFE8;
+        border: 1px solid #0A3871;;
+        border-radius: 24px;
+    }
+
+    #text-area-esquerdo{
+        color: #0A3871;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        border: none;
+        resize: none;
+        background-color: lightgray;
+        width: 98%;
+    }
+
+    #text-area-esquerdo::placeholder{
+        font-family: 'Inter', sans-serif;
+        color: #0A3871;
+    }
+    
+    .direito{
+        display: flex;
+        flex-direction: column;
+        justify-content:initial;
+        background-color: white;
+        margin-left: 5px;
+        margin-top: 70px;
+        width: 98%;
+        height: 30%;
+        border-radius: 10px;
+        box-shadow: 0 24px 32px -8px black;
+        text-align: center;       
+    }
+
+    .p {
+        padding: 5px;
+        font-style: normal;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 120%;
+    }
+
+    .imagem {
+        display: none;
+    }
+
+    .copiar2 {
+        color: #FFFFFF;
+        padding-top: 17px;
+        font-size: 16px;
+        width: 100%;
+        height: 33px;
+        text-align: center;
+        background-color: #0A3871;
+        border-radius: 10px;
+    }
+
+    .text-area-direto2{
+        padding: 10px;
+        resize: none;
+        border: none;
+        text-align: center;
+        height: 90vh;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+    }
+
+    .botaoCopiar{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .logo{
+
+        height: 10%;
+        padding-top: 10px;
+        padding-left: 20px;
+        display: block;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador de Texto</title>
+</head>
+
+
+<body>
+    <main>
+             
+        <div class="esquerdo">
+            <div class="logo">
+                <img src="Vector.png" alt="Logo Alura"/>
+            </div>
+            <div class="digitar">
+                <textarea id="text-area-esquerdo" placeholder="Digite o seu texo."></textarea>
+            </div>
+            <div class="bloco-botoes">
+                <div class="texto-acima-botoes">
+                    <p>❗Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="botoes">
+                    <div class="btcriptografar" id="btcriptografar">Criptografar</div>
+                    <div class="btdescriptografar" id="btdescriptografar">Descriptografar</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="direito">
+            <img class="imagem" id="imagem" src="imagem.jpg" alt="Imagem de texto não encontrado"/>
+            <p class="p" id="pDireito">Nenhuma mensagem encontrada</p>
+            <textarea class="text-area-direto" id="text-area-direto" placeholder="Digite um texto que você deseja criptografar ou descriptografar"></textarea>
+                <div class="botaoCopiar">
+                    <div class="copiar" id="copiar"> Copiar</div>
+                </div>
+        </div>
+
+    </main>
+
+    <script src="principal.js"></script>
+</body>
+</html>
